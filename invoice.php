@@ -91,7 +91,6 @@ class Invoice
                     </thead>
                     <tbody>';
 
-        // Add items to the table
         foreach ($this->items as $item) {
             $subtotal = $item['quantity'] * $item['price'];
             $invoice .= '
